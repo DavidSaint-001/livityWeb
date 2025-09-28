@@ -180,7 +180,7 @@ body {
   text-shadow: 0 0 8px #1db954, 0 0 15px #1db954, 0 0 20px #1db954;
 }
 
-/* Optional pulsating glow */
+
 .social-icons a:hover i {
   animation: glowPulse 1.5s infinite alternate;
 }
