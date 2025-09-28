@@ -61,7 +61,7 @@ const Contact = () => {
   <p className={`form-status ${status.includes('successfully') ? 'success' : 'error'}`}>
     {status}
   </p>
-)}
+)};
 
     </div>
   );
