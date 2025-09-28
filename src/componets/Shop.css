@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 #shop-wrapper {
     padding-top: 80px;
@@ -16,6 +17,7 @@
     text-align: center;
     color: #222;
     display: grid;
+    background: #fff;
 }
 .shop-container h1 {
   color: black;

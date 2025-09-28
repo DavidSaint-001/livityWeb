@@ -3,23 +3,28 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+ 
 }
 
 body {
   color: #fff;
   font-family: 'Arial', sans-serif;
-  background: #121212;
+ 
 }
 
 /* Container */
 .contact-container {
-  max-width: 600px;
   margin: 60px auto;
   padding: 40px;
   background: #1c1c1c;
   box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
   text-align: center;
-  border-radius: 12px;
+   background: #121212; 
+   align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  
 }
 
 .contact-container h1 {
