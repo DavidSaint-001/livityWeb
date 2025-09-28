@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
  
 }
 
-/* Container */
+
 .contact-container {
   margin: 60px auto;
   padding: 40px;
@@ -98,7 +98,7 @@ body {
   box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Success/Error messages */
+
 .form-status {
   margin-top: 15px;
   padding: 12px;
@@ -140,7 +140,7 @@ body {
 
 
 
-/* Responsive */
+
 @media (max-width: 650px) {
   .contact-container {
     padding: 30px 20px;
@@ -159,3 +159,37 @@ body {
   }
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 32px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #1db954; 
+  transform: scale(1.2);
+  text-shadow: 0 0 8px #1db954, 0 0 15px #1db954, 0 0 20px #1db954;
+}
+
+/* Optional pulsating glow */
+.social-icons a:hover i {
+  animation: glowPulse 1.5s infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 8px #1db954, 0 0 15px #1db954, 0 0 20px #1db954;
+  }
+  100% {
+    text-shadow: 0 0 12px #1db954, 0 0 20px #1db954, 0 0 30px #1db954;
+  }
+}

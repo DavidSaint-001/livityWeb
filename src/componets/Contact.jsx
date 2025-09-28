@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./Contact.css";
+import 'remixicon/fonts/remixicon.css';
+
 
 const Contact = () => {
   const [status, setStatus] = useState('');
@@ -62,8 +64,23 @@ const Contact = () => {
     {status}
   </p>
 )};
+<div className="social-icons">
+  <a href="https://wa.me/2349027086472" target="_blank" rel="noopener noreferrer">
+    <i className="ri-whatsapp-line"></i>
+  </a>
+  <a href="https://www.instagram.com/cannotrushgreatness" target="_blank" rel="noopener noreferrer">
+    <i className="ri-instagram-line"></i>
+  </a>
+  <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+    <i className="ri-twitter-line"></i>
+  </a>
+  <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
+    <i className="ri-facebook-line"></i>
+  </a>
+</div>
 
     </div>
+    
   );
 };
 
