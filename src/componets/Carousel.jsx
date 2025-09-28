@@ -20,7 +20,7 @@ const Carousel = () => {
     <div className='carousel'>
       <Slider {...settings}>   
         <div>
-          <p>🌿 Free shipping on orders above ₦50,000</p>
+          <p>🌿 Free shipping on orders above $500</p>
         </div>
         <div>
           <p>✨ for customised designs reach out to us via our email!</p>
