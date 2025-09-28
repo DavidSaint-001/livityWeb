@@ -77,7 +77,7 @@ const Contact = () => {
   <a href="https://www.facebook.com/yourusername" target="_blank" rel="noopener noreferrer">
     <i className="ri-facebook-line"></i>
   </a>
-    <a href="https://www.tiktok.com/cannotrushgreatness06" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.tiktok.com/cannotrushgreatness6" target="_blank" rel="noopener noreferrer">
     <i className="ri-tiktok-line"></i>
   </a>
 </div>
