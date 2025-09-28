@@ -68,7 +68,7 @@ const Contact = () => {
   <a href="https://wa.me/2349027086472" target="_blank" rel="noopener noreferrer">
     <i className="ri-whatsapp-line"></i>
   </a>
-  <a href="https://www.instagram.com/livity" target="_blank" rel="noopener noreferrer">
+  <a href="https://www.instagram.com/livity25" target="_blank" rel="noopener noreferrer">
     <i className="ri-instagram-line"></i>
   </a>
   <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
