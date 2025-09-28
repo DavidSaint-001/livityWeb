@@ -1,0 +1,50 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    color: #000;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    scroll-behavior: smooth;
+    cursor: progress;
+    position: relative;
+     background: linear-gradient(50deg #fff,#000);
+        padding: 1rem 6%;
+        scroll-behavior: smooth;
+}
+
+   
+.logo h1{
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.nav-bar ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+.nav-bar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-size: 21px;
+    text-transform: capitalize;
+   
+}
+.nav-bar ul li a:hover {
+    color: #222;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+.nav-bar button {
+    padding: 10px;
+    border-radius: 10px;
+}
+

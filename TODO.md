@@ -1,0 +1,1 @@
+- [ ] Remove the duplicate cart-details div block outside the cart.map loop in Cart.jsx

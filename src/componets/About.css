@@ -1,0 +1,105 @@
+
+#about {
+  overflow: hidden;
+  background: #fff;
+  color: #000;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 10%;
+  position: relative;
+}
+
+
+.about-img,
+.about-text {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.about-img {
+  animation-delay: 0.2s;
+}
+
+.about-text {
+  animation-delay: 0.5s;
+}
+
+.about-img {
+  flex: 1;
+  min-width: 280px;
+  text-align: center;
+}
+
+.about-img .image {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 2px solid #000;
+  object-fit: cover;
+  box-shadow: 6px 6px 0 #000;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-img .image:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 10px 10px 0 #000;
+}
+
+.about-text {
+  flex: 1.2;
+  min-width: 320px;
+}
+
+.about-text h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  border-left: 5px solid #000;
+  padding-left: 15px;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  animation: slideIn 1s ease forwards;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.about-text p:hover {
+  color: #000;
+}
+
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

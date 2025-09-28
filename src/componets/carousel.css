@@ -1,0 +1,56 @@
+.carousel {
+  background: #2ecc71;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  z-index: 1100;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.carousel .slick-slider {
+  width: 100%;
+}
+
+.carousel .slick-slide {
+  text-align: center;
+}
+
+.carousel p {
+  margin: 0;
+  padding: 0 10px;
+  white-space: nowrap;
+  font-size: inherit;
+}
+
+
+@media (max-width: 768px) {
+  .carousel {
+    font-size: 16px;
+    height: 38px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .carousel {
+    font-size: 14px;
+    height: auto;
+    padding: 6px 4px;
+  }
+
+  .carousel p {
+    white-space: normal;
+    line-height: 1.4;
+  }
+}

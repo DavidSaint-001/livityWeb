@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+     color: #222;
+}
+
+span {
+    color: #000;
+}
+
+
+.home {
+
+    padding: 1rem 6%;
+    color: #222;
+
+}
+.home h1 {
+   
+   font-size: 100px;
+}
+.home h2 {
+   
+    font-size: 100px;
+}
+ button {
+    align-items: center;
+    padding: 20px;
+   border-radius: 50px;
+    background-color: #000;
+    color: #fff;
+
+}
+
+
+
+
+.gallery-title {
+    text-align: center;
+    color: #222;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.image-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 400px; 
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.gallery-item:hover .gallery-image {
+    transform: scale(1.1);
+}
+.gallery-item h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.gallery-item p {
+  margin: 5px 0;
+  color: #fff;
+  text-align: center;
+}
+.gallery-item button {
+  background: black;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  
+}
+.gallery-item button :hover {
+  background: #444;
+}
+
+
+.shopnow {
+
+}
+.shopnow h1,h2 {
+    align-items: center;
+    text-align: center;
+
+}
+
+
+.about-flex {
+  display: flex;
+  align-items: stretch; 
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+  color: #222;
+}
+
+.about-img {
+  width: 45%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  height: 100%; 
+}
+.about-img:hover {
+     transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.about-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+.About {
+    background-color: #fff;
+}
+
+
+
+.contact {
+  padding: 80px 10%;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  color: #222;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.contact-form button {
+  background-color: #111;
+  color: #fff;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Georgia', serif;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+
+.tracking-in-contract-bck-top {
+	animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-contract-bck-top {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px) translateY(-300px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1;
+  }
+}
