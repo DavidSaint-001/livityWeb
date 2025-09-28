@@ -15,7 +15,10 @@ const Contact = () => {
         <p><strong>Visit:</strong> 123 Black & White Street, Lagos, Nigeria</p>
       </div>
 
-      <form className="contact-form">
+      <form className="contact-form"
+      action={"https://formspree.io/f/mjkagqla"}
+      method='POST'>
+        
         <input type="text" placeholder="Name" required />
         <input type="email" placeholder="Email *" required />
         <input type="tel" placeholder="Phone number" />
