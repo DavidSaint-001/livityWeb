@@ -63,7 +63,7 @@ const Contact = () => {
   <p className={`form-status ${status.includes('successfully') ? 'success' : 'error'}`}>
     {status}
   </p>
-)};
+)}
 <div className="social-icons">
   <a href="https://wa.me/2349027086472" target="_blank" rel="noopener noreferrer">
     <i className="ri-whatsapp-line"></i>
