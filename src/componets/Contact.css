@@ -187,9 +187,9 @@ body {
 
 @keyframes glowPulse {
   0% {
-    text-shadow: 0 0 8px #1db954, 0 0 15px #1db954, 0 0 20px #1db954;
+    text-shadow: 0 0 8px #d2d819, 0 0 15px #1d5bb9, 0 0 20px #b91d3c;
   }
   100% {
-    text-shadow: 0 0 12px #1db954, 0 0 20px #1db954, 0 0 30px #1db954;
+    text-shadow: 0 0 12px #1db954, 0 0 20px #b91d1d, 0 0 30px #31503c;
   }
 }

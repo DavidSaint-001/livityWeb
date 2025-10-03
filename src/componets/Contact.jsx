@@ -80,6 +80,12 @@ const Contact = () => {
     <a href="https://www.tiktok.com/cannotrushgreatness6" target="_blank" rel="noopener noreferrer">
     <i className="ri-tiktok-line"></i>
   </a>
+   <a href="https://www.tiktok.com/cannotrushgreatness6" target="_blank" rel="noopener noreferrer">
+    <i className="ri-threads-line"></i>
+  </a>
+  <a href="https://www.tiktok.com/cannotrushgreatness6" target="_blank" rel="noopener noreferrer">
+    <i className="ri-mail-line"></i>
+  </a>
 </div>
 
     </div>
