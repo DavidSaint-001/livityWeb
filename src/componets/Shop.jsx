@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useState } from "react";
-import "./Shop.css"; 
-import { CartContext } from "../context/CartContext"; 
+import "./Shop.css";
+import { CartContext } from "../context/CartContext";
 
 import product from '../assets/brown.jpg';
 import product2 from '../assets/fifth product.jpg';
@@ -16,6 +16,7 @@ const Shop = () => {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [size, setSize] = useState("");
   const [color, setColor] = useState("");
+  const [showWarning, setShowWarning] = useState(false);
 
   useEffect(() => {
     const cards = document.querySelectorAll(".product-card");
@@ -44,6 +45,9 @@ const Shop = () => {
     { id: 9, name: "Winter Sweater", desc: "Soft and warm winter sweater for chilly days", price: 50, img: product7 },
   ];
 
+  const colorOptions = ["Red", "Blue", "Green", "Black"];
+  const sizeOptions = ["S", "M", "L", "XL"];
+
   return (
     <div className="shop-container" id="shop-now">
       <h1>Our Products</h1>
@@ -69,44 +73,67 @@ const Shop = () => {
             <span className="price">${selectedProduct.price}</span>
 
             <div className="options">
-              <label>Size:</label>
-              <select value={size} onChange={(e) => setSize(e.target.value)}>
-                <option value="">Select Size</option>
-                <option value="S">Small</option>
-                <option value="M">Medium</option>
-                <option value="L">Large</option>
-                <option value="XL">Extra Large</option>
-              </select>
 
+              {/* SIZE */}
+              <label>Size:</label>
+              <div className="size-options">
+                {sizeOptions.map((s) => (
+                  <button
+                    key={s}
+                    className={`size-btn ${size === s ? "active" : ""}`}
+                    onClick={() => {
+                      setSize(s);
+                      setShowWarning(false);
+                    }}
+                  >
+                    {s}
+                  </button>
+                ))}
+              </div>
+
+              {/* COLOR */}
               <label>Color:</label>
-              <select value={color} onChange={(e) => setColor(e.target.value)}>
-                <option value="">Select Color</option>
-                <option value="Red">Red</option>
-                <option value="Blue">Blue</option>
-                <option value="Green">Green</option>
-                <option value="Black">Black</option>
-              </select>
+              <div className="color-options">
+                {colorOptions.map((c) => (
+                  <div
+                    key={c}
+                    className={`color-box ${color === c ? "active" : ""}`}
+                    style={{ backgroundColor: c.toLowerCase() }}
+                    onClick={() => {
+                      setColor(c);
+                      setShowWarning(false);
+                    }}
+                  ></div>
+                ))}
+              </div>
             </div>
 
-           <button
-           onClick={() => {
-            if (!size || !color) {
-              alert("Please select size and color");
-              return;
-            }
-            addToCart({
-              ...selectedProduct,
-              size,
-              color,
-            });
-            setSelectedProduct(null);
-            setSize("");
-            setColor("");
-           }}
-           >
-            Add to Cart
+            {/* WARNING BOX */}
+            {showWarning && (
+              <div className="warning-box">
+                Please select <b>size</b> and <b>color</b> before adding to cart.
+              </div>
+            )}
 
-           </button>
+            <button
+              onClick={() => {
+                if (!size || !color) {
+                  setShowWarning(true);
+                  return;
+                }
+                addToCart({
+                  ...selectedProduct,
+                  size,
+                  color,
+                });
+                setSelectedProduct(null);
+                setSize("");
+                setColor("");
+                setShowWarning(false);
+              }}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       )}
